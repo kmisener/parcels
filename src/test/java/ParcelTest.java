@@ -14,4 +14,9 @@ public class ParcelTest {
   public void volume_MultipliesDimensionsToGiveVolume_300 () {
     assertEquals(300, parcel.Volume());
   }
+
+  @Test
+  public void costToShip_CalculateCostToShip_3 () {
+    assertEquals(60, parcel.costToShip());
+  }
 }
