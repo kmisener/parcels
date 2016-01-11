@@ -1,1 +1,26 @@
 <p>This is your home page!</p>
+
+<div class="col-md-12">
+  <form class="col-md-8" action="/output" method="get">
+    <div class="form-group">
+      <label for="packageLength">Please enter Package Length</label>
+      <input id="packageLength" type="number" name="packageLength" min="0" required class="form-control">
+
+      <label for="packageWidth">Please enter Package Width</label>
+      <input id="packageWidth" type="number" name="packageWidth" min="0" required class="form-control">
+
+      <label for="packageHeight">Please enter Package Height</label>
+      <input id="packageHeight" type="number" name="packageHeight" min="0" required class="form-control">
+
+      <label for="packageWeight">Please enter Package Weight</label>
+      <input id="packageWeight" type="number" name="packageWeight" min="0" required class="form-control">
+
+      <label for="packageSpeed">Please enter Package Speed</label>
+      <input id="packageSpeed" type="number" name="packageSpeed" min="0" required class="form-control">
+
+      <label for="packageDistance">Please enter Package Distance</label>
+      <input id="packageDistance" type="number" name="packageDistance" min="0" required class="form-control">
+    </div>
+    <button type="submit" class="btn btn-info">Create Word Puzzle</button>
+  </form>
+</div>
