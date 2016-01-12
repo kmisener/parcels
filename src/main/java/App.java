@@ -36,7 +36,7 @@ public class App {
 
       Parcel parcel = new Parcel(length, width, height, distance, speed, weight);
 
-      double cost = parcel.costToShip();
+      int cost = (int) Math.round(parcel.costToShip());
       model.put("cost", cost);
 
 

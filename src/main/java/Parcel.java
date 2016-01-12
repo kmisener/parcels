@@ -22,6 +22,6 @@ public class Parcel {
   }
 
   public double costToShip() {
-     return mCostToShip = (this.Volume() / mWeightInLbs) * (mDistanceInKm * (mSpeedInDays * .00025));
+     return mCostToShip = (this.Volume() / mWeightInLbs) * (mDistanceInKm * (mSpeedInDays * .00015));
   }
 }
