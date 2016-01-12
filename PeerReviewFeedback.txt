@@ -1,0 +1,28 @@
+Is the Github documentation - commits and README - thorough and descriptive?
+  No readme yet, probably ran out of time to add one?
+  Commit history would be clearer with more frequent commits
+
+Is there good spec coverage (unit and integration)?
+  Unit tests don't seem to fully cover parcel class. I would suggest adding tests to make sure the parcel constructor works as expected.
+
+Do all specs pass?
+  No, the costToShip_CalculateCostToShip_3 spec does not.
+
+Is the application logic clear and easy to navigate?
+  It's clear!
+
+  The logic for shipping cost calculation seems off. A longer shipping time is resulting in a higher cost when we run the app. Seems like a longer shipping time should result in a lower cost.
+
+Are custom classes and methods created?
+  Yes!
+
+  You might want to add getter methods for the member variables of the parcel class. If you had the getter methods, instead of putting the different user input values in the model in App.java, you could just put the parcel in the model and then use the getter methods in the .vtl files. I know that makes the code a little longer in this case, but that's a technique the homework was demonstrating for us.
+
+Is the site user-friendly?
+  It's mostly fine. Would be more user friendly with units listed on the form page, otherwise customer won't know. Might also want to add max values to the form input fields to prevent attempting to ship something with ridiculously large dimensions.
+
+Are there opportunities for refactoring?
+  Maybe try adding the whole object to the model? That technique will be helpful and easier to understand with more complicated objects. The way you did it is shorter for these simple objects though.
+
+Do you have any additional constructive criticism or positive feedback to share?
+  The code is clear and concise. It's easy to understand what the program is doing.
