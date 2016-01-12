@@ -24,4 +24,22 @@ public class IntegrationTest extends FluentTest {
       goTo("http://localhost:4567/");
       assertThat(pageSource()).contains("");
     }
+
+    @Test
+      public void outputTest() {
+        goTo("http://localhost:4567/");
+        fill("#packageWidth").with("5");
+        fill("#packageHeight").with("5");
+        fill("#packageLength").with("12");
+        fill("#packageSpeed").with("5");
+        fill("#packageDistance").with("500");
+        fill("#packageWeight").with("5");
+        submit(".btn");
+        assertThat(pageSource()).contains("Height: 5 cm");
+        assertThat(pageSource()).contains("Length: 12 cm");
+        assertThat(pageSource()).contains("Width: 5 cm");
+        assertThat(pageSource()).contains("Weight: 5 lbs");
+        assertThat(pageSource()).contains("Distance: 500 km");
+        assertThat(pageSource()).contains("Speed: 5 days");
+      }
 }

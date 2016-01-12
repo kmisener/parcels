@@ -8,8 +8,7 @@ public class ParcelTest {
     public void setUp() {
       parcel = new Parcel(12, 5, 5, 500, 5, 5);
     }
-
-
+    
   @Test
   public void volume_MultipliesDimensionsToGiveVolume_300 () {
     assertEquals(300, parcel.Volume());
@@ -17,6 +16,6 @@ public class ParcelTest {
 
   @Test
   public void costToShip_CalculateCostToShip_3 () {
-    assertEquals(60, parcel.costToShip());
+    assertEquals(37.5, parcel.costToShip(), .25);
   }
 }

@@ -27,12 +27,12 @@ public class App {
       int distance = Integer.parseInt(request.queryParams("packageDistance"));
       int weight = Integer.parseInt(request.queryParams("packageWeight"));
 
-      // model.put("length", length);
-      // model.put("width", width);
-      // model.put("height", height);
-      // model.put("speed", speed);
-      // model.put("distance", distance);
-      // model.put("weight", weight);
+      model.put("length", length);
+      model.put("width", width);
+      model.put("height", height);
+      model.put("speed", speed);
+      model.put("distance", distance);
+      model.put("weight", weight);
 
       Parcel parcel = new Parcel(length, width, height, distance, speed, weight);
 
@@ -42,6 +42,5 @@ public class App {
 
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-
   }
 }
